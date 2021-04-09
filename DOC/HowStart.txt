@@ -1,0 +1,8 @@
+mvn org.codehaus.mojo:exec-maven-plugin:VERSION:exec "-Dexec.args=-classpath %classpath com.github.kvac.jfacedetection.init.JFaceDetectionInit" -Dexec.executable=JVM_PATH
+------------------------------------------------------------------------
+arguments:
+JVM_PATH - full path to JVM  
+VERSION - version "EXEC" plugin maven LATEST(1.5.0)
+------------------------------------------------------------------------
+EXAMPLE:
+mvn org.codehaus.mojo:exec-maven-plugin:1.5.0:exec "-Dexec.args=-classpath %classpath com.github.kvac.jfacedetection.init.JFaceDetectionInit" -Dexec.executable=/usr/lib/jvm/java-8-openjdk/bin/java
